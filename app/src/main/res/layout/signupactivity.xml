@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="16dp"
+    android:fitsSystemWindows="true"
+    android:id="@+id/signupText"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:id="@+id/photosignup"
+        android:layout_width="205dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="32dp"
+        android:src="@mipmap/dark_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="contentDescription" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="204dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:text="create your account"
+        android:textColor="#666666"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photosignup" />
+
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="204dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="44dp"
+        android:text="or sign up with"
+        android:textColor="#666666"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/facebookBtn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupBtn"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editcreateemail"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="enter your email"
+        android:textColorHint="@color/cardview_shadow_start_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext_bg"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="enter your password"
+        android:textColorHint="@color/cardview_shadow_start_color"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:id="@+id/editpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editcreateemail" />
+
+    <EditText
+        android:id="@+id/editconfirmpassword"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:hint="confirm your password"
+        android:textColorHint="@color/cardview_shadow_start_color"
+        android:textColor="@color/black"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editpassword"
+        android:background="@drawable/edittext_bg"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_bg"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:id="@+id/signupBtn"
+        android:text="SIGN UP"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editconfirmpassword" />
+
+    <ImageButton
+        android:id="@+id/googleBtn2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="44dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Google"
+        android:src="@drawable/ic_google"
+        app:layout_constraintEnd_toStartOf="@+id/facebookBtn2"
+        app:layout_constraintTop_toBottomOf="@+id/text2" />
+
+    <ImageButton
+        android:id="@+id/facebookBtn2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Facebook"
+        android:src="@drawable/ic_facebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text2" />
+
+    <ImageButton
+        android:id="@+id/twitterBtn2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Twitter"
+        android:src="@drawable/ic_twitter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.979"
+        app:layout_constraintStart_toEndOf="@+id/facebookBtn2"
+        app:layout_constraintTop_toBottomOf="@+id/text2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnFacebook" type="id" />
+    <item name="inputEmail" type="id" />
+    <item name="inputPassword" type="id" />
+    <item name="btnGoogle" type="id" />
+</resources>

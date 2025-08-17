@@ -1,0 +1,18 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- لما يكون مضغوط -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+
+    <!-- الشكل العادي -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#673AB7" />
+            <corners android:radius="8dp" />
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+</selector>
